@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>o'zgaruvchi vireable yaratish usullari:</h1>
+
+    <p> <br>1.var - bu glabal o'zgaruvchi yaratish uchun ishlatiladi, var kalit so'zida yaratilgan o'garuvchilarni qayta
+        yaratsa bo'ladi, bar bu eski o'zgaruvchi yaratish usuli.</p>
+    <p> <br>2.let - bu blockskop o'zgaruvchi yaratish uchun kerak bo'ladi, let kalit so'zi orqali yaratilgan
+        o'zgaruvchilar qayta yaratilib bo'lmaydi, letyangi yaratuvchi yaratish usuli.</p>
+    <p> <br>3.const - o'garmas o'garuvchi yaratish uchun ishlatiladi, const orqali yaratilgan vireablega o'zgartirib
+        bo'lmaydigan qiymat berilishi kerak, const yangi ozgaruvchi raratish usuli</p>
+    <p> <br>4.alert() - cleint message(xabar) chiqarish uchun.</p>
+    <p> <br>4.prompt() - cleintga savol berish va qiymat kiritish uchun ishlatiladi.</p>
+    <p> <br>4.confirm() - cleintga qisqa savol berish uchun.</p>
+
+
+
+<br><br><br><br><br>
+
+
+
+    <h1>Data type - malumot turlari ikki turga bo'linadi</h1>
+    <p>birinchisi - primitive</p>
+    <p>ikkinchisi - nonprimitive</p>
+    <p>primitive - 1. - string, 2. - number, 3. - bigint, 4. - boolean, 5. - undefinet, 6. - null, 7. - symbol</p>
+    <p>nonprimitive - 1. - object yozilishi - {}, 2. - array yozilishi - [], 3. - function yozilishi function funcName(){code...}</p>
+  <p>type conversion  - bir data typedagi malumotni boshqa bir data typega o'zgarib ketishiga aytiladi</p>
+    <p>%  - qoldiqli bo'lish</p>
+    <p>() - amalni birinchi bajarish uchun ishlatiladi</p>
+    <p> = - qiymat biriktirish uchun ishlatiladi</p>
+    <p>++ - bitta oshirib beradi</p>
+    <p>-- - bitta kamaytirib beradi</p>
+    <p>** - darajani bildiradi</p>
+    <br><br><br><br><br>
+
+        <h1>Taqqoslashlar</h1>
+    <h2>bular conparisionlar</h2>
+    <p> == , ===, >, <, >=, <=,</p>
+    <p>bulardan qaytadigan natija doim "boolean" data type kiruvchi qiymat bo'ladi</p>
+    <p>boolean: true, false</p>
+    <p>== - vazifasi: faqat qiymatlarni o'zini taqqoslaydi</p>
+    <p>==== - vazifasi: ham qiymatlarni taqqoslaydi ham data type ni ham taqqoslaydi</p>
+    <p> < - vazifasi: ikkita qiymatdan birini kichikligini tekshiradi</p>
+    <p> > - vazifasi: ikkita qiymatdan birini kattaligini tekshirib beradi</p>
+    <p><= - vazifasi: ikkita qiymatdan biri kichikligi yoki tengligini tekshirib beradi</p>
+    <p>>= - vazifasi: ikkita qiymatdan biri kattaligini yoki tengligini tekshirib beradi</p>
+    <p>|| - (yoki operaatori) - berilgan qiymatlar ichidan trueni qidiradi agar true topilmasa eng  oxirgi qiymatni chiqarib beradi</p>
+    <p>&& (va operaatori) - berilgan qiymatlar ichidan folse ni qidiradi folse topilmasa oxirgi qiymatni chiqarib beradi</p>
+    <p>! - (imkor belgisi) - berilgan qiymatni boolean data typega o'girib kegin uni teskarisiga almashtirib chiqaradi</p>
+    <p>?? -(nullish belgisi) - berilgan qiymatlar ichidan trueni qidiradi agar topilmasa oxirgisini chiqaradi "yoki (||)" operatoridan Farqi <h2 style="color: red;">null va undefinetni</h2> solse deb bildiradi qolga barcha qiymat bu uchun trueni</p>
+
+
+        <h1>Taqqoslashlar</h1>
+    <p>🔹 % (qoldiq)
+
+
+<br>        Ma’nosi: bo‘lishdan qolgan qoldiq
+
+<br>
+
+<br>let a = 10 % 3; // 1
+
+<br>
+
+<br>👉 Ko‘p ishlatiladi:
+
+<br>
+
+<br>let son = 7;
+
+<br>console.log(son % 2); // 1 (toq)
+
+<br>🔹 ** (daraja)
+
+<br>
+
+<br>Ma’nosi: darajaga oshiradi
+
+<br>
+
+<br>let a = 2 ** 3; // 8
+
+<br>🔹 ++ (increment)
+
+<br>
+
+<br>Ma’nosi: 1 ga oshiradi
+
+<br>
+
+<br>let a = 5;
+
+<br>a++; // 6
+
+<br>
+
+<br> Farqi:
+
+<br>
+
+<br>let a = 5;
+
+<br>console.log(a++); // 5
+
+<br>console.log(++a); // 7
+
+<br> -- (decrement)
+
+<br>
+
+<br>Ma’nosi: 1 ga kamaytiradi
+
+<br>
+
+<br>let a = 5;
+
+<br>a--; // 4
+
+<br> += (qo‘shib yozish)
+
+<br>
+
+<br>Ma’nosi: o‘ziga qo‘shadi
+
+<br>
+
+<br>let a = 5;
+
+<br>a += 3; // 8
+
+<br>
+
+<br> Bu:
+
+<br>
+
+<br>a = a + 3;
+
+<br> /= (bo‘lib yozish)
+
+<br>
+
+<br>Ma’nosi: o‘zini bo‘ladi
+
+<br>
+
+<br>let a = 10;
+
+<br>a /= 2; // 5
+
+<br> Kichik real misol:
+
+<br>let pul = 100;
+
+<br>
+
+<br>pul += 50;  // 150
+
+<br>pul -= 20;  // 130
+
+<br>pul *= 2;   // 260
+
+<br>pul /= 2;   // 130
+
+<br>pul %= 3;   // 1
+
+<br>
+
+<br>console.log(pul);
+
+<br> Eng oson eslab qolish:
+
+<br>+ - * / → oddiy matematika
+
+<br>% → qoldiq
+
+<br>** → daraja
+
+<br>++ -- → 1 ga o‘zgartiradi
+
+<br>+= /= → qisqa yozish</p>
+
+<br>
+
+<h1>if, else if, else</h1>
+<p>🔹 1. if — (agar)
+
+<br>Ma’nosi: Agar berilgan shart rost (true) bo‘lsa, kod ishlaydi.
+<br>
+<br>let son = 10;
+<br>
+<br>if (son > 0) {
+<br>  console.log("Musbat son");
+<br>}
+<br>
+<br>👉 Agar son > 0 rost bo‘lsa, ichidagi kod bajariladi.
+<br>
+<br>🔹 2. else if — (aks holda agar)
+<br>
+<br>Ma’nosi: Birinchi if noto‘g‘ri bo‘lsa, boshqa shartni tekshiradi.
+<br>
+<br>let son = -5;
+<br>
+<br>if (son > 0) {
+<br>  console.log("Musbat");
+<br>} else if (son < 0) {
+<br>  console.log("Manfiy");
+<br>}
+<br>
+<br>👉 if ishlamasa, else if tekshiriladi.
+<br>
+<br>🔹 3. else — (aks holda)
+<br>
+<br>Ma’nosi: Agar yuqoridagi barcha shartlar noto‘g‘ri bo‘lsa, oxirgi variant ishlaydi.
+<br>
+<br>let son = 0;
+<br>
+<br>if (son > 0) {
+<br>  console.log("Musbat");
+<br>} else if (son < 0) {
+<br>  console.log("Manfiy");
+<br>} else {
+<br>  console.log("Nol");
+<br>}
+<br>
+<br>👉 Hech qaysi shart to‘g‘ri bo‘lmasa, else ishlaydi.
+<br>
+<br>🔹 4. switch — (tanlash operatori)
+<br>manosi: bir o'zgaruvchini bir necha qiymat bilan solishtirib mosini bajariladi
+<br> let kun = 3
+<br> switch (kun){
+<br>
+    case 1:
+<br>
+    console.log("Dushanba");
+<br>
+    break;
+<br>
+    case 2:
+<br>
+    console.log("Seshanba");
+<br>
+    break;
+<br>
+    case 3:
+<br>
+    console.log("CHorshanba");
+<br>
+    break;
+<br>
+    default:
+<br>
+    console.log("boshqa kun")
+<br>
+}
+
+    <h1>Qisqa farqi</h1>
+    <p>if -> bitta shart tekshiradi</p>
+    <p>else if -> qo'shimcha shartlar</p>
+    <p>else -> oxirgi variant</p>
+    <p>switch -> ko'b variantni tartibli tekshiradi</p>
+    <p>case - > switch ichida tekshiriladigan aniq qiymat, yani o'zgaruvchi qaysiqiymatga ega teng bo'lsa, o'sha case ishlaydi</p>
+    <p>let kun = 2;
+
+<br>    switch (kun) {
+<br>      case 1:
+<br>        console.log("Dushanba");
+<br>        break;
+<br>      case 2:
+<br>        console.log("Seshanba");
+<br>        break;
+<br>    }
+<br>    Bu yerda:
+<br>    case 1 → agar kun = 1
+<br>    case 2 → agar kun = 2</p>
+<br><p>bu yerda:</p>
+<br><p>case 1 -> agar kun = 1</p>
+<br><p>case 2 -> agar kun = 2</p>
+<br><p>break -> agar break bo'lmasa kegingi caselar ham ishlayveradi</p>
+<br>
+
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</body>
+
+</html>
