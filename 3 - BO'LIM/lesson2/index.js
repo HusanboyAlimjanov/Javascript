@@ -65,32 +65,100 @@
 // vazifa
 
 
-//find
-//1
-let arr1 = [3, 7, 8, 12, 15, 20, 9];
+// //find
+// //1
+// let arr1 = [3, 7, 8, 12, 15, 20, 9];
 
-let arr = arr1.find(num => num > 10 && num % 2 === 0);
-console.log(arr);
-
-
-let arr2 = [10, 15, 21, 30, 45, 9];
-
-let arrp2 = arr2.find(num => num > 15 && num % 3 === 0 && num % 5 === 0);
-console.log(arrp2);
+// let arr = arr1.find(num => num > (10 && num % 2 === 0));
+// console.log(arr);
 
 
+// let arr2 = [10, 15, 21, 30, 45, 9];
 
-// findindex()
-let arr3 = [5, 8, 12, -3, 7, -9, 2];
-
-let arrp3 = arr3.findIndex(num => (num < 0));
-console.log(arrp3);
+// let arrp2 = arr2.find(num => (num > 15 && num % 3 === 0 && num % 5 === 0));
+// console.log(arrp2);
 
 
-let arr4 = [10, 18, 16, 22, 30, 25];
 
-let arrp4 = arr4.findIndex(num => (Math.sqrt(num) % 1 === 0));
-console.log(arrp4);
+// // findindex()
+// let arr3 = [5, 8, 12, -3, 7, -9, 2];
 
-let arr6 = [5, 23, 100, 45, 200, 78, 300];
+// let arrp3 = arr3.findIndex(num => (num < 0));   128
+// console.log(arrp3);
 
+
+// let arr4 = [10, 18, 16, 22, 30, 25];
+
+// let arrp4 = arr4.findIndex(num => (Math.sqrt(num) % 1 === 0));
+// console.log(arrp4);
+
+// let arr6 = [5, 23, 100, 45, 200, 78, 300];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //videodars
+// let arr = ["Olma", "Anor", "Uzum", "Nok"]
+// let len = arr.find((value, index, a) =>{
+//     if(value === "Uzum") return value
+// })
+// console.log(len.length);
+
+// let arr = [5, 2, 7, 9, 5, 10, 1, 4]
+// let katta = Math.max(...arr)
+// let max = arr.findIndex((value, index, a) =>{
+    // if(katta === value) return value
+// })
+// console.log(max);
+
+
+// let arr = ["Olma", "Anor", "Uzum", "Nok", "sjsjdiwjsbdwwiw"]
+// let len = 0
+// let v = ""
+// arr.forEach((value, index, a) =>{
+//     if(value.length > len) {
+//         len = value.length
+//         v = value
+//     }
+// })
+// console.log(v);
+
+
+
+
+// let arr = ["Scratch", "Python", "Html", "Css", "Scratch", "JS", "React JS"]
+// let i = arr.findLastIndex((value, index, a) =>{
+//     return "Scratch" === value
+// })
+// console.log(i);
+
+
+
+
+
+
+    
