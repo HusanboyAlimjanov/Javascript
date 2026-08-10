@@ -79,3 +79,273 @@
 // [1, 2, 3, 4, 5, 1, 2, 3, 4]
 // let copyArr = arr.copyWithin(5, 0, 5);
 // console.log(copyArr);
+
+
+
+// let arr = [
+//   { name: "Ali", age: 25 },
+//   { name: "Vali", age: 17 },
+//   { name: "Sami", age: 20 },
+//   { name: "John", age: 30 },
+// ];
+
+// let a = arr.filter((value, index, a) => value.age > 18 && value.name.toLowerCase().includes("a"));
+// console.log(a);
+
+
+
+// for(let i = 1; i <= 50; i++){      
+//         if(i%10 === 0)console.log(i);
+//     }
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// let newArr = arr.reduce((acc, cur)=>{
+//     if(!(cur%2)) return acc * cur
+//     return acc
+// }, 1)
+// console.log(newArr);
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let sum = arr.reduce((acc, sum) => !(sum % 2) || !(sum % 3) ?acc + sum : acc, 0)
+// console.log(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//videodars
+
+
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let sum = arr.reduce((acc, cur) => {
+//     if(cur % 2) return acc * cur
+//     return acc
+// }, 1);
+// console.log(sum)
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let sum = arr.reduce((acc, cur) => {
+//     if(!(cur % 2)) return acc * cur
+//     return acc
+// }, 1);
+// console.log(sum)
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let sum = arr.reduce((acc, cur) => {
+//     if(cur % 3  === 0 || cur % 2 === 0 ) return acc + cur
+//     return acc
+// }, 0);
+// console.log(sum)
+
+
+// reduce
+// reduce(() => {}, 0)
+// reduce((acc, cur) => {}, 0)
+// 1. accumulator
+// 2. currentValue
+
+// let arr = [1, 2, 3, 4, 5];
+// let sum = arr.reduce((acc, cur) => acc + cur, 0);
+// console.log(sum);
+
+// let arr = [1, 2, 3, 4, 5];
+// let sum = arr.reduce((acc, cur) => acc * cur, 1);
+// console.log(sum);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let sum1 = arr.reduce((acc, cur) => {
+//   if (cur % 2 === 0) return acc + cur
+//   return acc
+// }, 0);
+// console.log(sum1)
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let sum2 = arr.reduce((acc, cur) => cur % 2 === 0 ? acc + cur : cur, 0);
+// console.log(sum2)
+
+// let mul = arr.reduce((acc, cur) => cur % 2 ? acc + cur : cur, 1);
+// console.log(mul)
+
+// let mul = arr.reduce((acc, cur) => {
+//     if(!(cur % 2)) return acc + cur
+//     return acc
+// }, 1)
+// console.log(mul)
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log("//////////////////////////////////////////////");
+
+let arr1 = [
+  { name: "Telefon", price: 3500000 },
+  { name: "Quloqchin", price: 250000 },
+  { name: "Noutbuk", price: 7800000 }
+];
+
+let aer1 = arr1.filter((product) => {
+  return product.price > 1000000;
+});
+
+console.log(aer1);
+
+
+console.log("//////////////////////////////////////////////");
+
+let arr2 = [
+  { name: "Ali", ball: 56 },
+  { name: "Vali", ball: 88 },
+  { name: "Sami", ball: 71 },
+  { name: "Olim", ball: 44 }
+];
+
+let aer2 = arr2.filter((student) => {
+  return student.ball >= 60;
+});
+
+console.log(aer2);
+console.log("//////////////////////////////////////////////");
+
+let arr3 = [
+  { name: "Ali", active: true },
+  { name: "Vali", active: false },
+  { name: "Sami", active: true }
+];
+
+let aer3 = arr3.filter((user) => {
+  return user.active === true;
+});
+
+console.log(aer3);
+
+
+console.log("//////////////////////////////////////////////");
+
+let arr4 = [
+  "Ali Valiyev",
+  "Sami Karimov",
+  "Olim Hasanov"
+];
+
+let aer4 = arr4.map((name) => {
+  return name.toLowerCase().replaceAll(" ", "_");
+});
+
+console.log(aer4);
+
+
+console.log("//////////////////////////////////////////////");
+
+
+let arr5 = [100000, 250000, 80000];
+
+let aer5 = arr5.map((price) => {
+  return price * 1.12;
+});
+
+console.log(aer5);
+
+
+
+console.log("//////////////////////////////////////////////");
+
+
+let arr6 = [
+  { name: "Ali", age: 20 },
+  { name: "Vali", age: 25 }
+];
+
+let aer6 = arr6.map((user) => {
+  return `${user.name} (${user.age} yosh)`;
+});
+
+console.log(aer6);
+
+
+
+let arr7 = [
+  { name: "Ali", ball: 78 },
+  { name: "Vali", ball: 42 },
+  { name: "Sami", ball: 91 }
+];
+
+
+
+console.log("//////////////////////////////////////////////");
+arr7.forEach((arr7) => {
+  if (arr7.ball >= 60) {
+    console.log(`${arr7.name} - O‘tdi`);
+  } else {
+    console.log(`${arr7.name} - Yiqildi`);
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
